@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sentiment Analysis
 * This presentation focuses on sentiment analysis, specifically building a text
 classification model for emotion prediction based on textual data.
@@ -17,3 +18,6 @@ emotions.
 # Run app in terminal
 * Open terminal in folder app and run this command
 * python -m streamlit run app.py
+=======
+# emotion_detection
+>>>>>>> origin/master
