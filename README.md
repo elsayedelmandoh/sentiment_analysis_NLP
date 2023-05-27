@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 # Sentiment Analysis
-* This presentation focuses on sentiment analysis, specifically building a text
-classification model for emotion prediction based on textual data.
+* This presentation focuses on sentiment analysis, specifically building a text classification model for emotion prediction based on textual data.
 
-* The dataset used in this project consists of text samples labeled with different
-emotions.
+* The dataset used in this project consists of text samples labeled with different emotions.
 
 
 # Training machine learning model
@@ -18,6 +15,3 @@ emotions.
 # Run app in terminal
 * Open terminal in folder app and run this command
 * python -m streamlit run app.py
-=======
-# emotion_detection
->>>>>>> origin/master
