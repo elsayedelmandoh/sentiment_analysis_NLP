@@ -8,7 +8,7 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer, PorterStemmer
 
 # Load the pre-trained model
-model = joblib.load('../models/pipeline_tfidf_nb_24_may_2023.pkl')
+model = joblib.load('../models/pipeline_tfidf_nb_30_may_2023.pkl')
 
 # Function to preprocess the input text
 def preprocess_text(text):
@@ -61,15 +61,18 @@ def main():
         prediction, probability = predict_sentiment(text_input)
         st.subheader("Prediction:")
         if prediction == 1:
-            st.write("Happy: 😂")
+            st.write("Positive: 😂")
+        elif prediction == 0:
+            st.write("Neutral: 😐")
         else:
-            st.write("Sad: 😔")
+            st.write("Negative: 😔")
         st.subheader("Probability:")
         st.write(f"Probability of Sad: {probability[0]:.2f}")
-        st.write(f"Probability of Happy: {probability[1]:.2f}")
-        
+        st.write(f"Probability of Neutral: {probability[1]:.2f}")
+        st.write(f"Probability of Happy: {probability[2]:.2f}")
+
         # Plot countplot for probability
-        data = {"Probability": ['Sad' , 'Happy'], "Value": probability}
+        data = {"Probability": ['Sad' , 'Neutral', 'Happy'], "Value": probability}
         df = pd.DataFrame(data)
         fig, ax = plt.subplots()
         sns.barplot(x="Probability", y="Value", data=df)
