@@ -1,7 +1,7 @@
 # Sentiment Analysis
 * This presentation focuses on sentiment analysis, specifically building a text classification model for emotion prediction based on textual data.
 
-* The dataset used in this project consists of text samples labeled with different emotions.
+* The dataset used in this project consists of text samples labeled with 9 different emotions into 3 classes: negative, neutral, and positive.
 
 
 # Training machine learning model
@@ -9,7 +9,7 @@
 
 
 # Evaluation
-* The performance of the model is evaluated using accuracy score is 95%.
+* The performance of the model is evaluated using accuracy score is 93%.
 
 
 # Run app in terminal
